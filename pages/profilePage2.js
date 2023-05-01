@@ -76,13 +76,14 @@ const styles = StyleSheet.create({
     zIndex: 1,
   },
   quickMenuItem: {
+    color: "#2F4F4F",
     fontSize: 16,
     fontWeight: 'bold',
   },
   profileContainer: {
     alignItems: 'center',
     paddingVertical: 20,
-    backgroundColor: "#F08080",
+    backgroundColor: "#556B2F",
   },
   profilePicture: {
     width: 150,
@@ -91,15 +92,18 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   name: {
+    color: "#FFFAFA",
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 5,
   },
   email: {
+    color: "#FFFAFA",
     fontSize: 16,
     marginBottom: 5,
   },
   phone: {
+    color: "#FFFAFA",
     fontSize: 16,
   },
   detailsContainer: {
@@ -112,6 +116,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     marginBottom: 10,
+    color: "#20B2AA"
   },
   tailing: {
     padding: 2,
