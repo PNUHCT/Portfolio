@@ -1,20 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import BotTabScreen from './navigation/botTab'; // import botTab.js
 
-export default function App() {
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>자 이제 시작이야!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <BotTabScreen/>
+    </NavigationContainer>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
