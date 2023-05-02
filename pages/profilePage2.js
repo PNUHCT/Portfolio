@@ -27,14 +27,18 @@ export default function profile2() {
       </View>
       <ScrollView style={styles.scrollView} ref={scrollViewRef}>
         <View style={styles.profileContainer}>
-          <Image
-            style={styles.profilePicture}
-            source={{uri: 'https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fpublic.notion-static.com%2F4c872d42-35d0-4af8-8f96-4c3b919b6bd3%2FKakaoTalk_20221011_011503210.jpg?id=157f7ace-8624-4f84-9fb1-e30b314c994b&table=space&spaceId=157f7ace-8624-4f84-9fb1-e30b314c994b&width=110&userId=03a0f9b5-e755-4c7c-80c1-f84f784e9383&cache=v2'}}
-          />
-          <Text style={styles.name}>김동진</Text>
-          <Text style={styles.name}>Kim Dong Jin</Text>
-          <Text style={styles.email}>nyong9221@gmail.com</Text>
-          <Text style={styles.phone}>010-3167-1552</Text>
+          <View>
+            <Image
+              style={styles.profilePicture}
+              source={{uri: 'https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fpublic.notion-static.com%2F4c872d42-35d0-4af8-8f96-4c3b919b6bd3%2FKakaoTalk_20221011_011503210.jpg?id=157f7ace-8624-4f84-9fb1-e30b314c994b&table=space&spaceId=157f7ace-8624-4f84-9fb1-e30b314c994b&width=110&userId=03a0f9b5-e755-4c7c-80c1-f84f784e9383&cache=v2'}}
+            />
+          </View>
+          <View>
+            <Text style={styles.name}>김동진</Text>
+            <Text style={styles.name}>Kim Dong Jin</Text>
+            <Text style={styles.email}>nyong9221@gmail.com</Text>
+            <Text style={styles.phone}>010-3167-1552</Text>
+          </View>
         </View>
         <View style={styles.detailsContainer}>
           <Text style={styles.heading}>Technologies Used</Text>
@@ -66,7 +70,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   quickMenu: {
-    backgroundColor: '#fff',
+    backgroundColor: '#FFFAFA',
     flexDirection: 'row',
     justifyContent: 'space-around',
     paddingVertical: 10,
@@ -81,13 +85,17 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   profileContainer: {
+    flex: 1,
+    flexDirection: "row",
     alignItems: 'center',
-    paddingVertical: 20,
+    justifyContent: 'space-evenly',
+    // paddingVertical: 20,
     backgroundColor: "#556B2F",
+    padding: 30
   },
   profilePicture: {
-    width: 150,
-    height: 150,
+    width: 200,
+    height: 200,
     borderRadius: 75,
     marginBottom: 10,
   },
@@ -107,7 +115,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   detailsContainer: {
-    marginTop : 100,
+    flex: 3,
     paddingHorizontal: 20,
     paddingVertical: 10,
   },
@@ -123,63 +131,3 @@ const styles = StyleSheet.create({
     fontSize: 15
   }
 });
-
-
-/**
- * 좌상단 버전
- */
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#fff',
-//   },
-//   quickMenu: {
-//     position: 'absolute',
-//     top: 0,
-//     left: 0,
-//     width: 150,
-//     backgroundColor: '#f2f2f2',
-//     justifyContent: 'space-between',
-//     paddingVertical: 20,
-//     paddingHorizontal: 10,
-//     zIndex: 1,
-//   },
-//   quickMenuItem: {
-//     fontSize: 16,
-//     fontWeight: 'bold',
-//     marginBottom: 10,
-//     color: '#333',
-//   },
-//   profileContainer: {
-//     alignItems: 'center',
-//     padding: 20,
-//     marginTop: 80,
-//   },
-//   profilePicture: {
-//     width: 100,
-//     height: 100,
-//     borderRadius: 50,
-//     marginBottom: 10,
-//   },
-//   name: {
-//     fontSize: 24,
-//     fontWeight: 'bold',
-//     marginBottom: 5,
-//   },
-//   email: {
-//     fontSize: 16,
-//     marginBottom: 5,
-//   },
-//   phone: {
-//     fontSize: 16,
-//     marginBottom: 5,
-//   },
-//   detailsContainer: {
-//     padding: 20,
-//   },
-//   heading: {
-//     fontSize: 18,
-//     fontWeight: 'bold',
-//     marginBottom: 5,
-//   },
-// });

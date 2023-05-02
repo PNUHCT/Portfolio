@@ -7,6 +7,7 @@ import bobaebilim from "../pages/bobaebilimPage";
 import blog from "../pages/blogPage";
 import profile from "../pages/profilePage";
 import profile2 from "../pages/profilePage2";
+import testPage from "../reference/mainPage";
 
 /**
  * BotTab + Stack Navigator 라이브러리 선언
@@ -67,7 +68,7 @@ const profileStackScreen = () => {
         <webViewStack.Navigator>
             <webViewStack.Screen
                 name = "Profile"
-                component = {profile2}
+                component = {profile}
                 options = {{ headerShown: false }}
             />
         </webViewStack.Navigator>
