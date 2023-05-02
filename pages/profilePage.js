@@ -1,5 +1,3 @@
-// https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fpublic.notion-static.com%2F4c872d42-35d0-4af8-8f96-4c3b919b6bd3%2FKakaoTalk_20221011_011503210.jpg?id=157f7ace-8624-4f84-9fb1-e30b314c994b&table=space&spaceId=157f7ace-8624-4f84-9fb1-e30b314c994b&width=110&userId=03a0f9b5-e755-4c7c-80c1-f84f784e9383&cache=v2o/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fpublic.notion-static.com%2F4c872d42-35d0-4af8-8f96-4c3b919b6bd3%2FKakaoTalk_20221011_011503210.jpg?id=157f7ace-8624-4f84-9fb1-e30b314c994b&table=space&spaceId=157f7ace-8624-4f84-9fb1-e30b314c994b&width=110&userId=03a0f9b5-e755-4c7c-80c1-f84f784e9383&cache=v2
-
 import React, {useRef} from 'react';
 import { StyleSheet, View, Text, ScrollView, Image } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
@@ -34,12 +32,14 @@ export default function profile() {
               <View>
                 <Image
                   style={styles.profilePicture}
-                  source={{uri: 'chrome://favicon2/?size=24&scaleFactor=1x&showFallbackMonogram=&pageUrl=https%3A%2F%2Fwww.naver.com%2F'}}
+                  source={{uri: 'https://file.notion.so/f/s/a7d792f3-4270-4b2d-ae2f-5827535da962/hospital_life2.jpg?id=1ad1d384-7fca-438c-b6f0-13ff7cc0c81b&table=block&spaceId=157f7ace-8624-4f84-9fb1-e30b314c994b&expirationTimestamp=1683091387074&signature=BgyGrE3-iQEIZhfvFgXhqR7bz0zJA4Lt6IUyCpGpNMw&downloadName=hospital_life2.jpg'}}
+                  // 흰가운 : https://file.notion.so/f/s/a7d792f3-4270-4b2d-ae2f-5827535da962/hospital_life2.jpg?id=1ad1d384-7fca-438c-b6f0-13ff7cc0c81b&table=block&spaceId=157f7ace-8624-4f84-9fb1-e30b314c994b&expirationTimestamp=1683091387074&signature=BgyGrE3-iQEIZhfvFgXhqR7bz0zJA4Lt6IUyCpGpNMw&downloadName=hospital_life2.jpg
+                  // 근무복 : https://file.notion.so/f/s/fa5d6de7-b7a6-49ef-a746-863adacaf718/hospital_life1min.jpg?id=a31bfa07-0aea-4095-9fd1-2862a3a5446d&table=block&spaceId=157f7ace-8624-4f84-9fb1-e30b314c994b&expirationTimestamp=1683091366970&signature=A2MSzp49s6qmuivVZtYykclW_7H6bB8K-jHC_bBoiZs&downloadName=hospital_life1min.jpg
+                  // 증사 : https://file.notion.so/f/s/3b2ade38-aff8-42aa-aff0-0e292d261c04/basic_1.jpg?id=3fc5b68c-6fd5-409f-ba71-180552997db8&table=block&spaceId=157f7ace-8624-4f84-9fb1-e30b314c994b&expirationTimestamp=1683091520454&signature=ofpqWHHn3XvEjo_oVjiRMjLCRtS1ksL67WR_t5K653Y&downloadName=basic_1.jpg
                 />
               </View>
               <View style= {styles.profileDetailsContainer}>
-                <Text style={styles.profileTitle}>김동진</Text>
-                <Text style={styles.profileTitle}>Kim Dong Jin</Text>
+                <Text style={styles.profileTitle}>김동진  Kim Dong Jin</Text>
                 <Text style={styles.profileSubtitle}>nyong9221@gmail.com</Text>
                 <Text style={styles.profileDetails}>010-3167-1552</Text>
               </View>
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
   mainContainer: {
     flexDirection: "row",
     alignItems: 'stretch',
-    backgroundColor: 'yellow',
+    backgroundColor: '#FFFAFA',
     padding: 15,
     width: '100%',
     height: '100%',
@@ -107,14 +107,14 @@ const styles = StyleSheet.create({
   sidebarContainer: {
     padding:10,
     paddingVertical: 15,
-    backgroundColor: 'green',
+    backgroundColor: '#FFFAFA',
   },
   sidebarButton: {
     width:100,
     height:50,
     padding:15,
-    backgroundColor:"#9adbc5",
-    borderColor:"deeppink",
+    backgroundColor:"#20B2AA",
+    borderColor:"#DA70D6",
     borderRadius:15,
     margin:7
   },
@@ -124,11 +124,17 @@ const styles = StyleSheet.create({
     textAlign:"center"
   },
 
+  // 우측 콘텐츠 전체 컨테이너
+  contentContainer: {
+    padding:20,
+    paddingHorizontal: 20
+  }, 
+
   // Profile CSS 부분
   profileContainer: {
     flexDirection: "row",
-    backgroundColor: "pink",
-    padding : 10,    
+    backgroundColor: "#20B2AA",
+    padding : 10,
   },
   profilePicture: {
     width: 200,
@@ -138,12 +144,12 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   profileDetailsContainer : {
-    padding: 20,
+    padding: 10,
     // justifyContent: "center",
-    backgroundColor: "brown",
+    // backgroundColor: "#8B4513",
   },
   profileTitle: {
-    color: "#20B2AA",
+    color: "#696969",
     fontSize: 20,
     fontWeight: 'bold',
     marginBottom: 5,
@@ -161,12 +167,18 @@ const styles = StyleSheet.create({
     padding: 10,
     fontSize: 20,
     fontWeight: 'bold',
-    color: "#20B2AA"
+    color: "#696969"
   },
   techContainer :{
-    // justifyContent: "center",
-    backgroundColor: "grey",
-    
+    // backgroundColor: "#696969",
+    marginLeft: 50,
+    borderLeftColor: "#FFFAFA",
+    borderLeftWidth: 3,
+    borderRightColor: "#FFFAFA",
+    borderRightWidth: 3,
+    borderRadius: 7,
+    alignItems: 'stretch',
+    paddingHorizontal: 30
   },
   techContentContainer: {
     flexDirection: "row",
@@ -178,18 +190,14 @@ const styles = StyleSheet.create({
     padding: 10,
   },
 
-  // 우측 콘텐츠 전체 컨테이너
-  contentContainer: {
-    backgroundColor: 'red',
-    padding:20,
-    paddingHorizontal: 20
-  }, 
+  // 콘텐츠 영역
   detailsContainer: {
     backgroundColor: "#FFFAFA",
     padding : 10,
+    paddingHorizontal: 150,
   },
   heading: {
-    marginTop: 30,
+    marginTop: 50,
     fontSize: 20,
     fontWeight: 'bold',
     marginBottom: 10,
@@ -197,6 +205,7 @@ const styles = StyleSheet.create({
   },
   tailing: {
     padding: 2,
-    fontSize: 15
+    fontSize: 15,
+    marginVertical: 10,
   }
 });

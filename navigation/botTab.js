@@ -7,7 +7,6 @@ import bobaebilim from "../pages/bobaebilimPage";
 import blog from "../pages/blogPage";
 import profile from "../pages/profilePage";
 import profile2 from "../pages/profilePage2";
-import testPage from "../reference/mainPage";
 
 /**
  * BotTab + Stack Navigator 라이브러리 선언
@@ -75,6 +74,19 @@ const profileStackScreen = () => {
     );
 };
 
+// D's player를 위한 페이지
+const dsplayerStackScreen = () => {
+    return (
+        <webViewStack.Navigator>
+            <webViewStack.Screen
+                name = "D'splayer"
+                component = {profile2}
+                options = {{ headerShown: false }}
+            />
+        </webViewStack.Navigator>
+    );
+};
+
 
 
 /**
@@ -114,6 +126,12 @@ const tabStackScreen = () => {
                             component = {blogStackScreen}
                             options = {{ tabBarLabel : "블로그", tabBarIcon : ({ color, size }) => 
                                         (<MaterialCommunityIcons name = "island" color = { color } size = { size } />)
+                            }}
+            />
+            <tabStack.Screen name = "D'splayer"
+                            component = {dsplayerStackScreen}
+                            options = {{ tabBarLabel : "D'splayer", tabBarIcon : ({ color, size }) => 
+                                        (<MaterialCommunityIcons name = "youtube" color = { color } size = { size } />)
                             }}
             />
         </tabStack.Navigator>

@@ -13,16 +13,16 @@ export default function profile2() {
     <View style={styles.container}>
       <View style={styles.quickMenu}>
         <TouchableOpacity onPress={() => handleScrollTo(0)}>
-          <Text style={styles.quickMenuItem}>Technologies Used</Text>
+          <Text style={styles.quickMenuItem}>Quik menu A</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => handleScrollTo(140)}>
-          <Text style={styles.quickMenuItem}>Projects</Text>
+          <Text style={styles.quickMenuItem}>Quik menu B</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => handleScrollTo(320)}>
-          <Text style={styles.quickMenuItem}>Education</Text>
+          <Text style={styles.quickMenuItem}>Quik menu C</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => handleScrollTo(500)}>
-          <Text style={styles.quickMenuItem}>Other</Text>
+          <Text style={styles.quickMenuItem}>Quik menu D</Text>
         </TouchableOpacity>
       </View>
       <ScrollView style={styles.scrollView} ref={scrollViewRef}>
@@ -30,32 +30,19 @@ export default function profile2() {
           <View>
             <Image
               style={styles.profilePicture}
-              source={{uri: 'https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fpublic.notion-static.com%2F4c872d42-35d0-4af8-8f96-4c3b919b6bd3%2FKakaoTalk_20221011_011503210.jpg?id=157f7ace-8624-4f84-9fb1-e30b314c994b&table=space&spaceId=157f7ace-8624-4f84-9fb1-e30b314c994b&width=110&userId=03a0f9b5-e755-4c7c-80c1-f84f784e9383&cache=v2'}}
+              source={{uri: 'https://emojigraph.org/media/emojidex/warning_26a0-fe0f.png'}}
             />
           </View>
           <View>
-            <Text style={styles.name}>김동진</Text>
-            <Text style={styles.name}>Kim Dong Jin</Text>
-            <Text style={styles.email}>nyong9221@gmail.com</Text>
-            <Text style={styles.phone}>010-3167-1552</Text>
+            <Text style={styles.name}>D's Player Demo ver</Text>
           </View>
         </View>
         <View style={styles.detailsContainer}>
-          <Text style={styles.heading}>Technologies Used</Text>
-          <Text>Java, SpringBoot, MySQL(RDBMS), Redis(NoSQL), React Native(Expo)</Text>
-          <Text style={styles.heading}>Projects</Text>
-          <Text style={styles.tailing}>1. D's player</Text>
-          <Text style={styles.tailing}>2. 보배빌림</Text>
-          <Text style={styles.tailing}>3. 우유부단</Text>
-          <Text style={styles.heading}>Education</Text>
-          <Text style={styles.tailing}>1. Code States</Text>
-          <Text style={styles.tailing}>2. Sparta</Text>
-          <Text style={styles.tailing}>3. Gachon University</Text>
-          <Text style={styles.tailing}>4. Overseas training in Singapore and Malaysia</Text>
-          <Text style={styles.heading}>Other</Text>
-          <Text style={styles.tailing}>알고리즘 : Java (Solved.ac)</Text>
-          <Text style={styles.tailing}>프로그래머스 : MySQL</Text>
-          <Text style={styles.tailing}>Career : 방사선사 (부산대학교병원)</Text>
+          <Text style={styles.heading}>추가 작업이 진행중</Text>
+          <Text style={styles.tailing}>현재 페이지는 D's player Demo 구현을 위한 테스트페이지입니다.</Text>
+          <Text style={styles.tailing}>현재 배포된 Portfolio 버전에서는 사용하실 수 없습니다.</Text>
+          <Text style={styles.tailing}>D's player를 Web 환경에서 사용해보실 수 있도록 추가 작업을 진행중입니다.</Text>
+          <Text style={styles.tailing}>양해 부탁드립니다.</Text>
         </View>
       </ScrollView>
     </View>
@@ -90,14 +77,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-evenly',
     // paddingVertical: 20,
-    backgroundColor: "#556B2F",
+    backgroundColor: "black",
     padding: 30
   },
   profilePicture: {
     width: 200,
     height: 200,
-    borderRadius: 75,
-    marginBottom: 10,
   },
   name: {
     color: "#FFFAFA",
@@ -115,7 +100,9 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   detailsContainer: {
-    flex: 3,
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
     paddingHorizontal: 20,
     paddingVertical: 10,
   },
