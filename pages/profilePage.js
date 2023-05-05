@@ -1,6 +1,7 @@
 import React, {useRef} from 'react';
 import { StyleSheet, View, Text, ScrollView, Image } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import profileImage from '../assets/hospital_life2.jpg';
 
 export default function profile() {
 
@@ -32,10 +33,8 @@ export default function profile() {
               <View>
                 <Image
                   style={styles.profilePicture}
-                  source={{uri: 'https://file.notion.so/f/s/a7d792f3-4270-4b2d-ae2f-5827535da962/hospital_life2.jpg?id=1ad1d384-7fca-438c-b6f0-13ff7cc0c81b&table=block&spaceId=157f7ace-8624-4f84-9fb1-e30b314c994b&expirationTimestamp=1683091387074&signature=BgyGrE3-iQEIZhfvFgXhqR7bz0zJA4Lt6IUyCpGpNMw&downloadName=hospital_life2.jpg'}}
-                  // 흰가운 : https://file.notion.so/f/s/a7d792f3-4270-4b2d-ae2f-5827535da962/hospital_life2.jpg?id=1ad1d384-7fca-438c-b6f0-13ff7cc0c81b&table=block&spaceId=157f7ace-8624-4f84-9fb1-e30b314c994b&expirationTimestamp=1683091387074&signature=BgyGrE3-iQEIZhfvFgXhqR7bz0zJA4Lt6IUyCpGpNMw&downloadName=hospital_life2.jpg
-                  // 근무복 : https://file.notion.so/f/s/fa5d6de7-b7a6-49ef-a746-863adacaf718/hospital_life1min.jpg?id=a31bfa07-0aea-4095-9fd1-2862a3a5446d&table=block&spaceId=157f7ace-8624-4f84-9fb1-e30b314c994b&expirationTimestamp=1683091366970&signature=A2MSzp49s6qmuivVZtYykclW_7H6bB8K-jHC_bBoiZs&downloadName=hospital_life1min.jpg
-                  // 증사 : https://file.notion.so/f/s/3b2ade38-aff8-42aa-aff0-0e292d261c04/basic_1.jpg?id=3fc5b68c-6fd5-409f-ba71-180552997db8&table=block&spaceId=157f7ace-8624-4f84-9fb1-e30b314c994b&expirationTimestamp=1683091520454&signature=ofpqWHHn3XvEjo_oVjiRMjLCRtS1ksL67WR_t5K653Y&downloadName=basic_1.jpg
+                  // source={require('../assets/hospital_life2.jpg')}
+                  source={require('../assets/카페1.jpg')}
                 />
               </View>
               <View style= {styles.profileDetailsContainer}>

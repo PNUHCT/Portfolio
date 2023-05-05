@@ -2,9 +2,9 @@
   "expo": {
     "name": "portfolio_ver_js",
     "slug": "portfolio_ver_js",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/neoguriIcon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -24,7 +24,7 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/neoguri48px.png"
     }
   }
 }
