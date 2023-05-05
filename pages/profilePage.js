@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import { StyleSheet, View, Text, ScrollView, Image } from 'react-native';
+import { StyleSheet, View, Text, ScrollView, Image, Linking } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import profileImage from '../assets/hospital_life2.jpg';
 
@@ -12,6 +12,7 @@ export default function profile() {
   const practiceRef = useRef(null);
   const careerRef = useRef(null);
   const handleScrollTo = (ref) => {ref.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });};
+  const portfolioLink = () => {Linking.openURL("https://www.canva.com/design/DAFh4CeA76I/L1tx14uewnRpHET93AncHw/view?utm_content=DAFh4CeA76I&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink")};
 
   // 토글 목록을 만들기 위한 코드
 
@@ -41,6 +42,7 @@ export default function profile() {
                 <Text style={styles.profileTitle}>김동진  Kim Dong Jin</Text>
                 <Text style={styles.profileSubtitle}>nyong9221@gmail.com</Text>
                 <Text style={styles.profileDetails}>010-3167-1552</Text>
+                <TouchableOpacity onPress={portfolioLink}><Text style={styles.profileDetails}>Portfolio-Canva</Text></TouchableOpacity>
               </View>
               <View style={styles.techContainer}>
                 <Text style={styles.TechnologiesUsed}>Technologies Used</Text>
